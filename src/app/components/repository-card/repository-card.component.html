@@ -1,0 +1,9 @@
+<div class="bg-white shadow-md p-4 rounded-lg border border-gray-600 min-h-40">
+    <h4 class="text-lg font-bold mb-5">{{ repo.name }}</h4>
+    <p class="text-sm text-gray-600 mb-5">{{ repo.description }}</p>
+    <div class="flex items-center overflow-x-auto">
+        <div *ngFor="let topic of repo.topics" class="mr-2">
+            <button class="bg-blue-500 text-white px-2 py-1 rounded text-nowrap">{{ topic }}</button>
+        </div>
+    </div>
+</div>
